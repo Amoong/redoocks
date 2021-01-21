@@ -1,7 +1,13 @@
 import React from "react";
+import UserContextProvider from "./context";
+import Screen from "./Screen";
 
 function App() {
-  return <div className="App">hi</div>;
+  return (
+    <UserContextProvider>
+      <Screen />
+    </UserContextProvider>
+  );
 }
 
 export default App;
